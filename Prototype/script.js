@@ -22,7 +22,7 @@
 //     isAdult: false
 // }
 
-function student(name, age, isAdult) {
+function Student(name, age, isAdult) {
     this.name = name;
     this.age = age;
     this.isAdult = isAdult;
@@ -43,16 +43,16 @@ function student(name, age, isAdult) {
 //  jisme mein yeh function daal dunga -
 // ab na yeh student function ke paas hai naa yeh in objects ke paas hai ab yeh student.prototype ke paas hai ek h baar memory milegi
 // student.prototype ke pass milega details function 
-// ab s1.details() function call krunga toh mil jayega vo function.
-student.prototype.details = function() {
+// ab s1.details() function call kruga toh mil jayega vo function.
+Student.prototype.details = function() {
         console.log(`Hi! My name is ${this.name} and my age is ${this.age}`);
     }
 
-let s1 = new student('Rajat', 20, true);
+let s1 = new Student('Rajat', 20, true);
 
-let s2 = new student('Salman', 24, true);
+let s2 = new Student('Salman', 24, true);
 
-let s3 = new student('Radha', 16, false);
+let s3 = new Student('Radha', 16, false);
 
 console.log(s1);
 
