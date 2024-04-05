@@ -18,10 +18,9 @@
 // setInterval() -
 
 const id = setInterval(() => {
-    console.log('Hello Tarun');
+  console.log("Hello Tarun");
 }, 1000);
 
 setTimeout(() => {
-    clearInterval(id);
+  clearInterval(id);
 }, 5000);
-

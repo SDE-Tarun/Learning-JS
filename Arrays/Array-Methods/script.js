@@ -1,4 +1,4 @@
-var arr = [1,2,3,4,5];
+var arr = [1, 2, 3, 4, 5];
 
 // PUSH - ADD ELEMENT AT THE LAST OF ARRAY
 arr.push(6);
@@ -19,24 +19,5 @@ console.log(arr);
 // SPILCE - RETURNS THE REMOVED ITEMS
 // (START INDEX, DELETION COUNT, ELEMENTS TO BE INSERTED)
 
-arr.splice(1,2,45,55);  
+arr.splice(1, 2, 45, 55);
 console.log(arr);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

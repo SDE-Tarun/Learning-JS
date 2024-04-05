@@ -1,43 +1,43 @@
 function updatePersonAge(age, name, location) {
-    this.age = age;
-    this.name = name;
-    this.location = location;
-    console.log(this);
+  this.age = age;
+  this.name = name;
+  this.location = location;
+  console.log(this);
 }
 
 let person1 = {
-    name: 'Tarun',
-    age: 25
-}
+  name: "Tarun",
+  age: 25,
+};
 
 let person2 = {
-    name: 'Surbhi',
-    age: 23
-}
+  name: "Surbhi",
+  age: 23,
+};
 
-// 1. APPLY() - Array mein pass krte hai 
+// 1. APPLY() - Array mein pass krte hai
 
-updatePersonAge.apply(person1, [45, 'Shivam', 'Banglore']);
+updatePersonAge.apply(person1, [45, "Shivam", "Banglore"]);
 
 // 2. BIND() -
 const person = {
-    firstName:"John",
-    lastName: "Doe",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    }
-  }
+  firstName: "John",
+  lastName: "Doe",
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  },
+};
 
-  const member = {
-    firstName:"Hege",
-    lastName: "Nilsen",
-  }
-  
-  let fullName = person.fullName.bind(member);
+const member = {
+  firstName: "Hege",
+  lastName: "Nilsen",
+};
 
-  console.log(fullName);
+let fullName = person.fullName.bind(member);
 
-  console.log(fullName());
+console.log(fullName);
+
+console.log(fullName());
 
 // CALL() -
 function greet() {
@@ -50,10 +50,3 @@ const obj = {
 };
 
 greet.call(obj);
-
-
-
-  
-  
-
-

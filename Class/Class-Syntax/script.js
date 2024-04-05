@@ -7,7 +7,7 @@
 //  ab mein obj1 print krunga toh mujhe emtpty dikhayega
 // lekin mein obj ki properties access krskta hu kyunki obj jo hai vo obj1 ka parent hai.
 // obj1.__proto == obj is true.
-// agr mein obj ka bhi __proto kru toh mujhe Object.prototype milega jo ki function hai jo object ki form mein store hota hai 
+// agr mein obj ka bhi __proto kru toh mujhe Object.prototype milega jo ki function hai jo object ki form mein store hota hai
 // lekin yeh obj1 yaha object hai.
 // isliye iska prototype nhi mil rha, kyunki prototype sirf function ka hi hota hai.
 
@@ -24,32 +24,32 @@
 
 // CLASS SYNTAX - isme class banake uska name Person capital hoga first letter same aise h constructor function ka naam bhi as per convention.
 
-class Person{
-    // jab bhi hum koi object create krte hai toh hamara constructor call hota hai
-    constructor(name, age, isAdult){
-        this.name = name;
-        this.age = age;
-        this.isAdult = isAdult;
-    }
+class Person {
+  // jab bhi hum koi object create krte hai toh hamara constructor call hota hai
+  constructor(name, age, isAdult) {
+    this.name = name;
+    this.age = age;
+    this.isAdult = isAdult;
+  }
 
-    printName() {
-        console.log(`Name: ${this.name}`);
-    }
+  printName() {
+    console.log(`Name: ${this.name}`);
+  }
 
-    // getter - get keyword lagaunga getAge function ke aage toh niche mujhe call nahi krna padega.() bina iske vo value return krdega.
-    get getAge(){
-        return this.age;
-    }
+  // getter - get keyword lagaunga getAge function ke aage toh niche mujhe call nahi krna padega.() bina iske vo value return krdega.
+  get getAge() {
+    return this.age;
+  }
 
-    // setter
-    set setAge(a){
-        this.age = a;
-    }
+  // setter
+  set setAge(a) {
+    this.age = a;
+  }
 
-    // agr mujhe age set krni ho ya use print krana ho tog mere pass hoga getter or setter function
+  // agr mujhe age set krni ho ya use print krana ho tog mere pass hoga getter or setter function
 }
 
-let p1 = new Person('Rohit', 20, true);
+let p1 = new Person("Rohit", 20, true);
 
 console.log(p1.printName()); // Name: Rohit and undefinded aa rha hai
 //  kyunki yeh mein function print kr rha hu console mein aur yeh function kch return nhi kr raha hai isliye undefined aa rha hai
@@ -64,11 +64,3 @@ console.log(p1.getAge);
 p1.setAge = 25;
 
 console.log(p1.getAge);
-
-
-
-
-
-
-
-
